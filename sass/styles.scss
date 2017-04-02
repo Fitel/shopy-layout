@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-	max-width: 81.25%;
+	max-width: 1170px;
 	margin: 0 auto;
 	padding: 0 10px;
 	position: relative;
@@ -167,10 +167,11 @@ body {
 
 .slider-caption {
 	position: absolute;
-	height: 190px;
+	height: 220px;
 	top: 50%;
 	left: 100px;
 	margin-top: -95px;
+	overflow: hidden;
 
 	h1 {
 		font-family: $harmoniaBlack;
@@ -185,7 +186,7 @@ body {
 		color: $main-color;
 	}
 
-	:nth-child(3) {
+	.item-description {
 		margin-top: 20px;
 		margin-bottom: 70px;
 		font-weight: normal;
@@ -206,6 +207,14 @@ body {
 			margin-right: 10px;
 		}
 	}
+}
+
+.slide {
+	display: none;
+}
+
+.active-item {
+	display: block;
 }
 
 main {
@@ -253,7 +262,7 @@ main::after {
 
 .product {
 	height: 335px;
-	width: 270px;
+	width: 23%;
 	background: #fff;
 	padding-top: 30px;
 	margin-bottom: 30px;
@@ -553,7 +562,7 @@ main::after {
 }
 
 .bottom-product {
-	width: 370px;
+	width: 31.6%;
 	height: 160px;
 	background-color: #ffffff;
 	margin-bottom: 30px;
@@ -858,6 +867,25 @@ footer {
 			}
 
 		}
+	}
+
+	.product-container {
+		width: 75%;
+		margin: 0 auto;
+		margin-bottom: 80px;
+		justify-content: space-around;
+	}
+
+	.product {
+		width: 270px;
+	}
+
+	.best-sales {
+		justify-content: space-around;
+	}
+
+	.bottom-product {
+		width: 370px;
 	}
 
 	.news-bar {

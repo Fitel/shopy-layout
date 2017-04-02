@@ -3,7 +3,7 @@ body {
   box-sizing: border-box; }
 
 .container {
-  max-width: 81.25%;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 10px;
   position: relative; }
@@ -111,10 +111,11 @@ body {
 
 .slider-caption {
   position: absolute;
-  height: 190px;
+  height: 220px;
   top: 50%;
   left: 100px;
-  margin-top: -95px; }
+  margin-top: -95px;
+  overflow: hidden; }
   .slider-caption h1 {
     font-family: "HarmoniaSansBlack";
     font-size: 3em;
@@ -124,7 +125,7 @@ body {
     font-family: "HarmoniaSans";
     font-weight: 600;
     color: #34404b; }
-  .slider-caption :nth-child(3) {
+  .slider-caption .item-description {
     margin-top: 20px;
     margin-bottom: 70px;
     font-weight: normal; }
@@ -138,6 +139,12 @@ body {
     margin-left: 30px; }
     .slider-caption a i {
       margin-right: 10px; }
+
+.slide {
+  display: none; }
+
+.active-item {
+  display: block; }
 
 main {
   background-color: #f4f6f8;
@@ -174,7 +181,7 @@ main::after {
 
 .product {
   height: 335px;
-  width: 270px;
+  width: 23%;
   background: #fff;
   padding-top: 30px;
   margin-bottom: 30px; }
@@ -379,7 +386,7 @@ main::after {
   justify-content: space-between; }
 
 .bottom-product {
-  width: 370px;
+  width: 31.6%;
   height: 160px;
   background-color: #ffffff;
   margin-bottom: 30px; }
@@ -583,6 +590,21 @@ footer {
       margin-right: 5px; }
     .sale-bar .right-side p {
       font-size: 1em; }
+
+  .product-container {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    justify-content: space-around; }
+
+  .product {
+    width: 270px; }
+
+  .best-sales {
+    justify-content: space-around; }
+
+  .bottom-product {
+    width: 370px; }
 
   .news-bar h4 {
     margin-left: 40px; }
